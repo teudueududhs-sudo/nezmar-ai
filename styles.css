@@ -1,57 +1,37 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: radial-gradient(circle, #000, #111);
-    animation: backgroundMove 20s infinite alternate;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nez/Mar AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Nez/Mar AI</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">View Animes</a></li>
+        </ul>
+    </nav>
 
-@keyframes backgroundMove {
-    from {
-        background-position: 0% 0%;
-    }
-    to {
-        background-position: 100% 100%;
-    }
-}
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Nez/Mar AI</h1>
+            <p>Your AI-powered anime discovery platform.</p>
+            <div class="buttons">
+                <a href="#" class="btn">Start Watching</a>
+                <a href="#" class="btn">Join Discord</a>
+            </div>
+        </div>
+    </header>
 
-h1 {
-    color: #fff;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    font-size: 36px;
-    margin-top: 20px;
-}
-
-form {
-    margin: 30px auto;
-    display: inline-block;
-}
-
-input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    border: none;
-    border-radius: 5px;
-}
-
-select {
-    padding: 10px;
-    margin-left: 10px;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    margin-left: 10px;
-    border:
+    <section class="search-section">
+        <form id="searchForm">
+            <input type="text" id="search" placeholder="Search for anime or manga...">
+            <select id="category">
+                <option value
