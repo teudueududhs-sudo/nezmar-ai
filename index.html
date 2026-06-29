@@ -1,4 +1,4 @@
-index.html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,14 +24,26 @@ index.html<!DOCTYPE html>
             <h1>Welcome to Nez/Mar AI</h1>
             <p>Your AI-powered anime discovery platform.</p>
             <div class="buttons">
-                <a href="#" class="btn">Start Watching</a>
+                <a href="#search" class="btn">Start Watching</a>
                 <a href="#" class="btn">Join Discord</a>
             </div>
         </div>
     </header>
 
-    <section class="search-section">
+    <section class="search-section" id="search">
         <form id="searchForm">
             <input type="text" id="search" placeholder="Search for anime or manga...">
             <select id="category">
-                <option value
+                <option value="anime">Anime</option>
+                <option value="manga">Manga</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <div class="color-picker">
+        <label for="bgColor">Change Background:</label>
+        <input type="color" id="bgColor" name="bgColor" value="#3a0ca3">
+    </div>
+</body>
+</html>
